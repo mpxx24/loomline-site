@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loomline — Press Kit</title>
+<meta name="description" content="Press kit for Loomline, a meditative line-drawing puzzle game for iPhone and iPad. One line. A world that moves.">
+<style>
+  :root {
+    --cream: #F5ECDA;
+    --cream-deep: #EDE2CB;
+    --ink: #1A2238;
+    --ink-soft: #4A5168;
+    --accent: #B5542D;
+    --rule: rgba(26, 34, 56, 0.18);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  h1, h2, h3, .display {
+    font-family: "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 0 24px 96px; }
+
+  header.masthead {
+    text-align: center;
+    padding: 72px 0 48px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .masthead img.icon {
+    width: 128px; height: 128px;
+    border-radius: 28px;
+    box-shadow: 0 8px 28px rgba(26, 34, 56, 0.22);
+  }
+  .masthead h1 { font-size: 56px; margin-top: 24px; }
+  .masthead .tagline {
+    font-family: "EB Garamond", Garamond, Georgia, serif;
+    font-style: italic;
+    font-size: 24px;
+    color: var(--ink-soft);
+    margin-top: 4px;
+  }
+  .masthead .status {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 6px 18px;
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  section { padding: 48px 0; border-bottom: 1px solid var(--rule); }
+  section:last-of-type { border-bottom: none; }
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  section h2::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: var(--accent);
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+  p + p { margin-top: 1em; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    row-gap: 12px;
+    column-gap: 24px;
+  }
+  .facts dt {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding-top: 2px;
+  }
+  .facts dd a { color: var(--accent); }
+
+  ul.features { list-style: none; }
+  ul.features li {
+    padding: 10px 0 10px 32px;
+    position: relative;
+  }
+  ul.features li::before {
+    content: "";
+    position: absolute;
+    left: 6px; top: 19px;
+    width: 12px; height: 12px;
+    border: 2px solid var(--accent);
+    border-radius: 3px;
+    transform: rotate(45deg);
+  }
+  ul.features li strong { font-weight: 700; }
+
+  table.chapters {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+  table.chapters th, table.chapters td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+  }
+  table.chapters th {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  table.chapters td.free { color: var(--accent); font-weight: 700; }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .gallery figure {
+    background: var(--cream-deep);
+    border-radius: 14px;
+    padding: 12px;
+    text-align: center;
+  }
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 4px 16px rgba(26, 34, 56, 0.16);
+  }
+  .gallery figcaption {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-top: 10px;
+  }
+  .download-note { font-size: 15px; color: var(--ink-soft); margin-top: 16px; }
+
+  .iconrow { display: flex; align-items: center; gap: 24px; }
+  .iconrow img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 4px 16px rgba(26,34,56,0.16); }
+
+  footer {
+    text-align: center;
+    padding: 32px 0 56px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  a { color: var(--accent); }
+
+  @media (max-width: 640px) {
+    .masthead h1 { font-size: 40px; }
+    .facts { grid-template-columns: 1fr; row-gap: 2px; }
+    .facts dd { margin-bottom: 12px; }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header class="masthead">
+    <img class="icon" src="images/app-icon-1024.png" alt="Loomline app icon">
+    <h1>Loomline</h1>
+    <p class="tagline">One line. A world that moves.</p>
+    <span class="status">Coming 2026 · App Store</span>
+  </header>
+
+  <section id="factsheet">
+    <h2>Fact Sheet</h2>
+    <dl class="facts">
+      <dt>Developer</dt><dd>Mariusz Piątkowski — solo developer</dd>
+      <dt>Release</dt><dd>2026 (exact date TBA)</dd>
+      <dt>Platforms</dt><dd>iPhone &amp; iPad (Universal)</dd>
+      <dt>Price</dt><dd>Free to download · one-time $1.99 unlock for the full game</dd>
+      <dt>Content</dt><dd>10 chapters · 100 puzzles · free Daily Puzzle</dd>
+      <dt>Session length</dt><dd>1–5 minutes per puzzle</dd>
+      <dt>Input</dt><dd>One finger. A single continuous swipe is the only control.</dd>
+      <dt>Contact</dt><dd><a href="mailto:mpxx24@gmail.com">mpxx24@gmail.com</a></dd>
+    </dl>
+  </section>
+
+  <section id="description">
+    <h2>Description</h2>
+    <p><strong>Loomline</strong> is a meditative line-drawing puzzle game. Draw a single
+    unbroken line across a grid to fill every tile — but the grid doesn't sit still.
+    Special tiles, when your line passes through them, <strong>transform the board
+    itself</strong>: pivoting it, mirroring it, dropping blocks under gravity, crumbling
+    the floor behind you, linking distant threads. The transformations are the puzzle.</p>
+    <p>There are no timers, no scores, no ads, no accounts. Just a quiet board of warm
+    paper and ink, a thread to draw, and the small satisfying click of a world rearranging
+    itself around your line. One relaxing puzzle before bed.</p>
+    <p>Three of the ten chapters — and the Daily Puzzle — are free forever. A single
+    $1.99 purchase unlocks the rest. No subscriptions, ever.</p>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <ul class="features">
+      <li><strong>One input.</strong> Draw a single continuous line — that's the whole game.</li>
+      <li><strong>The grid is alive.</strong> Pivots, mirrors, gravity, crumbling tiles, linked threads, bridges, color locks, and one-way paths — each chapter introduces one idea and teaches it wordlessly.</li>
+      <li><strong>100 puzzles across 10 chapters</strong>, each chapter with its own palette and motif — from linen weave to stained glass to midnight stars.</li>
+      <li><strong>Free Daily Puzzle</strong> with streaks and a Wordle-style text share — free forever, no purchase needed.</li>
+      <li><strong>Fair monetisation.</strong> Free chapters, one $1.99 unlock, no ads, no subscriptions, no accounts.</li>
+      <li><strong>Paper-and-ink aesthetic.</strong> Warm cream, ink navy, per-chapter accent colors. Calm by design.</li>
+      <li><strong>Color-blind friendly.</strong> A dedicated color-blind mode patterns every color tile.</li>
+      <li><strong>Share cards.</strong> Every solve can be shared as a paper-textured card of your finished line.</li>
+    </ul>
+  </section>
+
+  <section id="chapters">
+    <h2>The Chapters</h2>
+    <table class="chapters">
+      <thead><tr><th>#</th><th>Chapter</th><th>Theme</th><th>Access</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>The Loom</td><td>Linen weave, warm cream</td><td class="free">Free</td></tr>
+        <tr><td>2</td><td>The Drafting Table</td><td>Ink on vellum, drafting blue</td><td>Paid</td></tr>
+        <tr><td>3</td><td>The Compass</td><td>Bronze, brass, navigation</td><td>Paid</td></tr>
+        <tr><td>4</td><td>The Mirror Lake</td><td>Still water, reflections</td><td class="free">Free</td></tr>
+        <tr><td>5</td><td>The Hinge</td><td>Burning rope, fading thread</td><td>Paid</td></tr>
+        <tr><td>6</td><td>The Weaver's Gate</td><td>Tapestry, knots</td><td class="free">Free</td></tr>
+        <tr><td>7</td><td>The Overpass</td><td>Stone arches, viaducts</td><td>Paid</td></tr>
+        <tr><td>8</td><td>The Prism</td><td>Stained glass, gradients</td><td>Paid</td></tr>
+        <tr><td>9</td><td>The Current</td><td>Rivers, flow arrows</td><td>Paid</td></tr>
+        <tr><td>10</td><td>The Finale</td><td>Midnight blue, stars</td><td>Paid</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="screenshots">
+    <h2>Screenshots</h2>
+    <div class="gallery">
+      <figure><img src="images/01-main-menu.png" alt="Loomline main menu"><figcaption>Main menu</figcaption></figure>
+      <figure><img src="images/05-puzzle.png" alt="Drawing a line through a puzzle"><figcaption>Drawing the line</figcaption></figure>
+      <figure><img src="images/06-puzzle-link.png" alt="A puzzle with linked tiles"><figcaption>Linked threads</figcaption></figure>
+      <figure><img src="images/03-chapters.png" alt="Chapter selection screen"><figcaption>Ten chapters</figcaption></figure>
+      <figure><img src="images/04-daily.png" alt="Daily Puzzle screen"><figcaption>Daily Puzzle</figcaption></figure>
+      <figure><img src="images/02-paywall.png" alt="One-time unlock screen"><figcaption>One-time unlock</figcaption></figure>
+    </div>
+    <p class="download-note">All screenshots are 1170 × 2532 (iPhone 6.1″). Right-click / long-press any image to save the full-resolution original.</p>
+  </section>
+
+  <section id="logo">
+    <h2>Logo &amp; Icon</h2>
+    <div class="iconrow">
+      <img src="images/app-icon-1024.png" alt="Loomline app icon, 1024 pixels">
+      <p>App icon, 1024 × 1024 PNG — <a href="images/app-icon-1024.png" download>download</a>.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About the Developer</h2>
+    <p>Loomline is made by <strong>Mariusz Piątkowski</strong>, a solo developer. It is a
+    one-person project end to end: design, code, puzzles, and the paper world they live in.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Press Contact</h2>
+    <p>Review builds, additional assets, and questions:
+    <a href="mailto:mpxx24@gmail.com">mpxx24@gmail.com</a></p>
+  </section>
+
+</main>
+<footer>
+  Loomline © 2026 Mariusz Piątkowski. Press kit assets on this page may be used freely in coverage of the game.
+</footer>
+</body>
+</html>
